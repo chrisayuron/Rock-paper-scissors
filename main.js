@@ -22,9 +22,37 @@ for (let i = 0; i < times; i++) {
         else if (value == 3) return "Scissor"
     }
 
-    if (user == pc) {
-        alert(`tie User: ${user} and PC: ${pc}`)
-        
+    function result(pc, user) {
+        if (user == pc) {
+            alert(`tie User: ${user} and PC: ${pc}`)
+            
+        }
+        else if (user == "Stone" && pc == "Paper") {
+            alert(`Winner PC: ${pc} and Loser User: ${user}`)
+            pcpoints+=1
+        }
+        else if (user == "Stone" && pc == "Scissor") {
+            alert(`Winner User: ${user} and Loser PC: ${pc}`)
+            userpoints+=1
+        }
+        else if (user == "Paper" && pc == "Stone") {
+            alert(`Winner User: ${user} and Loser PC: ${pc}`)
+            userpoints+=1
+        }
+        else if (user == "Paper" && pc == "Scissor") {
+            alert(`Winner PC: ${pc} and Loser User: ${user}`)
+            pcpoints+=1
+        }
+        else if (user == "Scissor" && pc == "Stone") {
+            alert(`Winner PC: ${pc} and Loser User: ${user}`)
+            pcpoints+=1
+        }
+        else if (user == "Scissor" && pc == "Paper") {
+            alert(`Winner User: ${user} and Loser PC: ${pc}`)
+            userpoints+=1
+        }
     }
+
+    result(pc, user)
 
 }
