@@ -55,4 +55,13 @@ for (let i = 0; i < times; i++) {
 
     result(pc, user)
 
+    
 }
+
+function winner(userpoints,pcpoints){
+    if(userpoints>pcpoints) return "Winner USER"
+    if(userpoints<pcpoints) return "Winner PC"
+    else return "USER and PC TIE"
+}
+
+alert(`${winner(userpoints,pcpoints)}.\n User Points: ${userpoints} \n PC Points: ${pcpoints}`)
